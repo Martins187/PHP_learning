@@ -84,13 +84,65 @@
         // echo $fruits[0];
     ?> -->
 
-<!-- Associative arrays -->
+<!-- Associative arrays ------------------------------------->
+
+<!-- <form action = "site.php" method = "post"> 
+        <input type="text" name = "student">
+        <input type = "submit">   
+    </form> -->
 
     <?php
-        $grades = array("Jima" => "A+", "Pam" => "B-", "Oscar" => "C+");
-        echo $grades["Jima"];
+        // $grades = array("Jima" => "A+", "Tom" => "B-", "Oscar" => "C+");
+        // $grades["Jima"] = "F";
+        // echo $grades["Jima"];
+        // echo $grades[$_POST["student"]];
 
     ?>
+
+<!-- Functions ------------------------------------------------->
+
+    <?php
+        // function sayHi($name){
+        //     echo "Hello $name <br>";
+        // }
+        // sayHi("Mike");
+        // sayHi("John");
+        // sayHi("Blake");
+    ?>
+
+<!-- Return statements--------------------------------------- -->
+
+        <?php
+            // function cube($num){
+            //     return $num * $num * $num;
+            //     echo "hello"; //nestrada, jo izmanto tikai return.
+            // }
+
+            // $cuberesult = cube(4);
+            // echo $cuberesult;
+        ?>
+
+<!-- if statements------------------------------------------ -->
+        <?php
+            $isMale = true;
+            $isTall = false;
+            if ($isMale && $isTall){
+                echo "You are a tall male";
+            }
+            elseif($isMale && !$isTall){
+                echo "You are a short male!";
+            }
+            else {
+                echo "You are not male";
+            }
+
+        ?>
+
+        
+        
+
+
+    
     
 </body>
 </html>
