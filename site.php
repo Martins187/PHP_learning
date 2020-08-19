@@ -124,18 +124,40 @@
 
 <!-- if statements------------------------------------------ -->
         <?php
-            $isMale = true;
-            $isTall = false;
-            if ($isMale && $isTall){
-                echo "You are a tall male";
-            }
-            elseif($isMale && !$isTall){
-                echo "You are a short male!";
-            }
-            else {
-                echo "You are not male";
-            }
+            // $isMale = true;
+            // $isTall = false;
+            // if ($isMale && $isTall){
+            //     echo "You are a tall male";
+            // }
+            // elseif($isMale && !$isTall){
+            //     echo "You are a short male!";
+            // }
+            // else {
+            //     echo "You are not male";
+            // }
 
+        ?>
+
+<!-- cooler calsulator -->
+        <form action="site.php" method = "post">
+            Ievadiet pirmo skaitli: <input type="number" step = "0.1" name = "num1"><br> 
+            Ievadiet otro skaitli: <input type="number" name = "num2"><br>
+            Ievadiet darbību: <input type="chr" name = "op"><br>
+            <input type="submit">
+        </form>
+       <!-- Step nozimee precizitate -->
+       
+       <?php
+            $num1 = $_POST["num1"];
+            $num2 = $_POST["num2"];
+            $op = $_POST["op"];
+
+            if($op == "+"){
+                echo $num1 + $num2;
+            }
+            else{
+                echo "Si";
+            }
         ?>
 
         
